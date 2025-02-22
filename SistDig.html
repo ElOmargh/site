@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Digestivo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+            text-align: center;
+        }
+        header {
+            background: #ff5733;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        ul {
+            text-align: left;
+            display: inline-block;
+        }
+        .quiz {
+            margin-top: 20px;
+        }
+        .quiz input {
+            margin: 10px;
+            padding: 5px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+    <script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+    </script>
+</head>
+<body onLoad="MM_preloadImages('descarga.jpg')">
+    <header>
+        Sistema Digestivo
+</header>
+<section>
+  <h2>¿Qué es el sistema digestivo?</h2>
+    <p>El sistema digestivo es el conjunto de órganos encargados de la digestión de los alimentos. Su función es descomponer los alimentos en nutrientes esenciales para que el cuerpo pueda absorberlos y utilizarlos para obtener energía, crecimiento y reparación celular.</p>
+        <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image1','','descarga.jpg',1)"><img src="descarga (1).jpg" width="262" height="192" id="Image1"></a></p>
+  </section>
+    <section>
+        <h2>Partes del sistema digestivo</h2>
+        <ul>
+            <li><b>Boca:</b> Inicia la digestión con la masticación y la saliva.</li>
+            <li><b>Esófago:</b> Transporta el alimento al estómago mediante movimientos peristálticos.</li>
+            <li><b>Estómago:</b> Secreta ácidos y enzimas para descomponer los alimentos.</li>
+            <li><b>Intestino delgado:</b> Absorbe los nutrientes esenciales.</li>
+            <li><b>Intestino grueso:</b> Absorbe agua y forma los desechos sólidos.</li>
+            <li><b>Hígado:</b> Produce bilis para ayudar a la digestión de grasas.</li>
+            <li><b>Páncreas:</b> Secreta enzimas digestivas.</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Funciones del sistema digestivo</h2>
+        <p>Las principales funciones del sistema digestivo son:</p>
+        <ul>
+            <li>Ingestión: Consumo de alimentos y líquidos.</li>
+            <li>Digestión: Transformación de los alimentos en sustancias más simples.</li>
+            <li>Absorción: Captación de nutrientes para su distribución en el cuerpo.</li>
+            <li>Eliminación: Expulsión de los residuos no digeridos.</li>
+        </ul>
+    </section>
+    <section class="quiz">
+        <h2>Cuestionario</h2>
+        <p>¿Cuál es el órgano principal donde ocurre la digestión química?</p>
+        <input type="text" id="respuesta" placeholder="Escribe tu respuesta">
+        <button onclick="verificarRespuesta()">Enviar</button>
+        <p id="resultado"></p>
+    </section>
+<script>
+        function verificarRespuesta() {
+            let respuesta = document.getElementById("respuesta").value.toLowerCase();
+            let resultado = document.getElementById("resultado");
+            if (respuesta === "estómago") {
+                resultado.textContent = "¡Correcto!";
+                resultado.style.color = "green";
+            } else {
+                resultado.textContent = "Incorrecto. Inténtalo de nuevo.";
+                resultado.style.color = "red";
+            }
+        }
+    </script>
+</body>
+</html>

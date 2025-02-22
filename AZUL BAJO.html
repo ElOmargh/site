@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Sistemas</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #0099FF, #33CCFF);
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .menu-container {
+            max-width: 400px;
+            margin: 50px auto;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+        h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .menu {
+            list-style: none;
+            padding: 0;
+        }
+        .menu li {
+            margin: 10px 0;
+        }
+        .menu a {
+            display: block;
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .menu a:hover {
+            background: rgba(0, 0, 0, 0.6);
+        }
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            padding: 10px 15px;
+            background: rgba(0, 0, 0, 0.4);
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .back-button:hover {
+            background: rgba(0, 0, 0, 0.7);
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <h3><strong>MENÚ</strong></h3>
+        <ul class="menu">
+            <li><a href="Sistemas.html" target="mainFrame">Resumen</a></li>
+            <li><a href="CIRCULATORIOP.html" target="mainFrame">Sistema Circulatorio</a></li>
+            <li><a href="RESPPRIN.html" target="mainFrame">Sistema Respiratorio</a></li>
+            <li><a href="SistDig.html" target="mainFrame">Sistema Digestivo</a></li>
+            <li><a href="SistNerv.html" target="mainFrame">Sistema Nervioso</a></li>
+            <li><a href="SistMusc.html" target="mainFrame">Sistema Muscular</a></li>
+        </ul>
+        <a class="back-button" href="BLANCO.html" target="mainFrame">Regresar</a>
+    </div>
+</body>
+</html>
